@@ -3,6 +3,7 @@ import LogoIcon from "./logo.icon";
 import PersonIcon from "./person.icon";
 import IconProps from "./type";
 
+// use this component to render all the icons
 const Icon: FC<IconProps> = ({ type, width, color }) => {
   return (
     <>
