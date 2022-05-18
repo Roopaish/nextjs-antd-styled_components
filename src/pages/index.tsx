@@ -1,10 +1,7 @@
 import type { NextPage } from "next";
-import Icon from "../assets/icons";
-import IconButton from "../components/style/button/icon.style";
 
-import { Button, Col, Collapse, Row } from "antd";
+import { Collapse } from "antd";
 import DefaultLayout from "../layout/default.layout";
-import CollapsePanel from "antd/lib/collapse/CollapsePanel";
 import { CaretRightOutlined } from "@ant-design/icons";
 import PanelHeader from "../components/Panel/panel-header";
 const { Panel } = Collapse;

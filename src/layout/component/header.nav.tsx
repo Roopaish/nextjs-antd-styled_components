@@ -3,7 +3,9 @@ import {
   BellOutlined,
   WarningOutlined,
 } from "@ant-design/icons";
-import { Avatar, Badge, List, Popover, Tabs } from "antd";
+import { Avatar, Badge, List, Popover, Tabs, Input, Modal } from "antd";
+import { useState } from "react";
+import { CustomInput } from "../../components/style/Input/input.style";
 import { Nav } from "./style/nav.style";
 import { TabContent, TabsWrap } from "./style/tabs.style";
 
@@ -61,9 +63,31 @@ const NotificationPopover = () => {
 };
 
 const HeaderNav = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
   return (
     <Nav>
-      <SearchOutlined />
+      <SearchOutlined onClick={showModal} />
+      <Modal
+        title="Search for something"
+        visible={isModalVisible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <Input />
+      </Modal>
       <Popover
         placement="bottomRight"
         content={<NotificationPopover />}
