@@ -8,6 +8,7 @@ const DefaultHeader = styled(Header)`
   width: 100%;
   background: white;
   display: flex;
+  justify-content: space-between;
   gap: 20px;
   align-items: center;
   padding: 20px;

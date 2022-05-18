@@ -1,7 +1,8 @@
-import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
-import { Layout, Grid, Drawer } from "antd";
+import { CloseOutlined, MenuOutlined, SearchOutlined } from "@ant-design/icons";
+import { Layout, Grid, Drawer, Row, Col } from "antd";
 import { FC, useState } from "react";
 import Icon from "../assets/icons";
+import HeaderNav from "./component/header.nav";
 import SiderNav from "./component/sider.nav";
 import {
   DefaultContent,
@@ -42,7 +43,13 @@ const DefaultLayout: FC<LayoutProps> = ({ children }) => {
         >
           <SiderNav />
         </Drawer>
-        <Icon type="logo" /> <h1>NextJS Antd Demo</h1>
+
+        <Row justify="center" align="middle" gutter={16}>
+            <Icon type="logo" />
+            <h1 style={{paddingLeft: 12, marginTop: 12}} >NextJS Antd</h1>
+        </Row>
+
+        <HeaderNav />
       </DefaultHeader>
       <Layout>
         {breakpoints.md && (
@@ -51,7 +58,12 @@ const DefaultLayout: FC<LayoutProps> = ({ children }) => {
           </DefaultSider>
         )}
         <DefaultContent>{children}</DefaultContent>
-        <DefaultFooter>Footer</DefaultFooter>
+        <DefaultFooter>
+          <Row>
+            <Col flex="100px">@roopaish</Col>
+            <Col flex="auto">Fill Rest</Col>
+          </Row>
+        </DefaultFooter>
       </Layout>
     </Layout>
   );

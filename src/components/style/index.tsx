@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle<Props>`
     background: #E3E3E3;
   }
 
-  h1, h2, h3, h4, h5, h6, .ant-drawer-title, .ant-menu-submenu-title{
+  h1, h2, h3, h4, h5, h6, .ant-drawer-title, .ant-menu-submenu-title, .ant-tabs-tab-btn{
     font-family: 'Lobster', cursive;
   }
 
