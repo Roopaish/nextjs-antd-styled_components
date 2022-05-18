@@ -3,6 +3,7 @@ type IconProps = {
   color?: string;
   width?: string;
   height?: string;
+  strokeWidth?: string;
 };
 
 export default IconProps;

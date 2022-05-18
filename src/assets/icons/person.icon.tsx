@@ -1,7 +1,7 @@
 import { FC } from "react";
 import IconProps from "./type";
 
-const PersonIcon: FC<IconProps> = ({ width, color }) => {
+const PersonIcon: FC<IconProps> = ({ width, color, strokeWidth }) => {
   return (
     <svg
       width={width || "14"}
@@ -9,6 +9,7 @@ const PersonIcon: FC<IconProps> = ({ width, color }) => {
       viewBox="0 0 14 14"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      strokeWidth={strokeWidth || "1"}
     >
       <g opacity="0.65">
         <circle cx="6.88342" cy="4.2998" r="3.5" stroke={color || "white"} />

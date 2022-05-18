@@ -7,6 +7,19 @@ type Props = {
 const GlobalStyles = createGlobalStyle<Props>`
   body{
     font-family: 'Macondo', cursive;
+    background: #E3E3E3;
+  }
+
+  h1, h2, h3, h4, h5, h6, .ant-drawer-title, .ant-menu-submenu-title{
+    font-family: 'Lobster', cursive;
+  }
+
+  .ant-menu{
+    background: transparent !important;
+  }
+
+  .ant-menu-submenu-title{
+    color: black;
   }
 `;
 
