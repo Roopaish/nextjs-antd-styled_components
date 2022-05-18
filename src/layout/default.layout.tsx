@@ -45,8 +45,8 @@ const DefaultLayout: FC<LayoutProps> = ({ children }) => {
         </Drawer>
 
         <Row justify="center" align="middle" gutter={16}>
-            <Icon type="logo" />
-            <h1 style={{paddingLeft: 12, marginTop: 12}} >NextJS Antd</h1>
+          <Icon type="logo" />
+          <h1 style={{ paddingLeft: 12, marginTop: 12 }}>NextJS Antd</h1>
         </Row>
 
         <HeaderNav />
@@ -58,13 +58,13 @@ const DefaultLayout: FC<LayoutProps> = ({ children }) => {
           </DefaultSider>
         )}
         <DefaultContent>{children}</DefaultContent>
-        <DefaultFooter>
-          <Row>
-            <Col flex="100px">@roopaish</Col>
-            <Col flex="auto">Fill Rest</Col>
-          </Row>
-        </DefaultFooter>
       </Layout>
+      <DefaultFooter>
+        <Row>
+          <Col flex="100px">@roopaish</Col>
+          <Col flex="auto"></Col>
+        </Row>
+      </DefaultFooter>
     </Layout>
   );
 };

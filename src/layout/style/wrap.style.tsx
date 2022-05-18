@@ -26,7 +26,7 @@ const DefaultSider = styled(Sider)`
 `;
 
 const DefaultContent = styled(Content)`
-  min-height: 100vh;
+  min-height: 80vh;
   margin: 20px;
   margin-top: 84px;
   padding: 20px;
